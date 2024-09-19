@@ -13,7 +13,7 @@ jobs:
     - name: Hola mundillo
       #run: directiva para correr codigo
       run: echo 'Hola mundillo'
-  otro job:
+  otro-job:
     runs-on: ubuntu-latest
     steps:
     #nombre del step

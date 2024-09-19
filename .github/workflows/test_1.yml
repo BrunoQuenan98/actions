@@ -9,14 +9,18 @@ jobs:
   #donde va a correr tiene que especificarse en cada job ya que cada job corre en un servidor
     runs-on: ubuntu-latest
     steps:
-    #nombre del step
+      #nombre del step
     - name: Hola mundillo
       #run: directiva para correr codigo
       run: echo 'Hola mundillo'
+    - name: crear file
+      run: touch hola.txt 
+    - name: set text
+      run: echo "hola pepe" >> hola.txt
+    - name: read file
+      run: cat hola.txt
   otro-job:
     runs-on: ubuntu-latest
     steps:
-    #nombre del step
     - name: LS
-      #run: directiva para correr codigo
       run: ls -al

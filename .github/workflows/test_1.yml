@@ -1,8 +1,14 @@
 # nombre de workflow
 name: Hola mundo 
-#trigger o evento cuando se va a ejecutar el workflow
-on: [push, pull_request]
-
+ # trigger o evento cuando se va a ejecutar el workflow
+# on: [push, pull_request]
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main  
 jobs:
 #nombre del job
   hola:

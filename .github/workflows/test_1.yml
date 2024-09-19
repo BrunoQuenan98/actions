@@ -1,11 +1,22 @@
-name: Hola mundo
-
+# nombre de workflow
+name: Hola mundo 
+#trigger o evento cuando se va a ejecutar el workflow
 on: [push]
 
 jobs:
+#nombre del job
   hola:
+  #donde va a correr tiene que especificarse en cada job ya que cada job corre en un servidor
     runs-on: ubuntu-latest
-
     steps:
+    #nombre del step
     - name: Hola mundillo
+      #run: directiva para correr codigo
       run: echo 'Hola mundillo'
+  otro job:
+    runs-on: ubuntu-latest
+    steps:
+    #nombre del step
+    - name: LS
+      #run: directiva para correr codigo
+      run: ls -al

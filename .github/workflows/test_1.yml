@@ -40,6 +40,8 @@ jobs:
         run: node --version 
       - name: ls
         uses: ./.github/actions/my-action
+        with:
+          message: "Que onda wey"
       # - name: LS
       #   run: |
       #     chmod +x script.sh

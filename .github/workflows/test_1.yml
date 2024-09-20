@@ -38,8 +38,8 @@ jobs:
           node-version: latest
       - name: node version
         run: node --version 
-      - name: install deps
-        run: npm i
+      - name: ls
+        uses: ./.github/actions/my-action
       # - name: LS
       #   run: |
       #     chmod +x script.sh

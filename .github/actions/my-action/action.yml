@@ -1,0 +1,9 @@
+name: "My action"
+description: "Test my action"
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: hola desde la action
+      runs: echo "hola desde la action"

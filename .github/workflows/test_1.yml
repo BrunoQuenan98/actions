@@ -34,9 +34,12 @@ jobs:
         uses: actions/checkout@v4.1.7
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.4
+        with:
+          node-version: latest
       - name: node version
         run: node --version 
-      
+      - name: install deps
+        run: npm i
       # - name: LS
       #   run: |
       #     chmod +x script.sh
